@@ -300,6 +300,7 @@ body {
   transition: transform 0.18s, box-shadow 0.18s, filter 0.18s;
   position: relative;
   overflow: hidden;
+  animation: floatButton 4s ease-in-out infinite;
 }
 
 .cta-btn::after {
@@ -341,6 +342,15 @@ body {
 
 .support-line a:hover {
   text-decoration: underline;
+}
+
+@keyframes floatButton {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 /* ── DISCLAIMER ── */
